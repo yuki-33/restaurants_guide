@@ -1,0 +1,9 @@
+=bootstrap_form_with model: @user, local: true do |f|
+  =f.text_field :first_name
+  =f.text_field :last_name
+  =f.text_field :email
+  =f.text_field :tel
+  =f.submit class: "btn btn-info"
+
+%br
+=link_to "back to the list", users_path

@@ -1,0 +1,12 @@
+%hr
+=@user.first_name
+=@user.last_name
+%br
+=@user.email
+%br
+=@user.tel
+%br
+%hr
+=link_to "Edit", edit_user_path(@user)
+%br
+=link_to "Back to the list", users_path

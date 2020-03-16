@@ -1,0 +1,16 @@
+-@restaurants.each do |restaurant|
+  %hr
+  ="名前 :"
+  =link_to restaurant.name, restaurant_path(restaurant)
+  %br
+  ="アドレス :"
+  =restaurant.address
+  %br
+  ="制作日 :"
+  =restaurant.created_at
+  %br
+  ="更新日 :"
+  =restaurant.updated_at
+
+%hr
+=link_to "新規レストラン登録", new_restaurant_path

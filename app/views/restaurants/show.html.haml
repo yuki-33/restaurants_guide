@@ -1,0 +1,12 @@
+=@restaurant.name
+%br
+=@restaurant.address
+%br
+%hr
+=link_to "レストラン一覧", restaurants_path
+
+%br
+=link_to "編集", edit_restaurant_path(@restaurant.id)
+
+%br
+=link_to "削除", restaurant_path(@restaurant), method: :delete, data: {confirm: "削除しますか？"}
